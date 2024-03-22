@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="player1">
+
+            <div class="top1">
+                <h1>Player 1</h1>
+                <div class="barp1">
+                    <div class="vie1" id="vie1"></div>
+                </div>
+                <h2>PV : <span id="pdv1">100</span> / 100</h2>
+            </div>
+
+            <div class="caracter1">
+                <img src="images/Malenia.png" alt="malenia">
+            </div>
+            <div class="actionp1">
+                <div class="buttonp1">
+                    <button id="atk1" >Attaque</button>
+                    <button id="def1" >Défense</button>    
+                    <button id="hel1" >Potion de soin</button>
+                    <button id="fsm1" >Fiole de salut miraculeux</button>
+                </div>
+                <div class="menu1">
+                    <h3>Lance une attaque faisant entre 10 et 20 points de dégats</h3>
+                    <h3>Permet d'esquiver une attaque (50% de chance de réussir)</h3>
+                    <h3>Permet de se soigner a hauteur de 40 PV (<span id="soinp1">3</span>)</h3>
+                    <h3>Permet de doubler les dégats du joueur pour la prochaine attaque (<span id="boostp1">1</span>)</h3>
+                </div>
+
+            </div>
+    
+        </div>
+        <div class="middle">
+        <div class="round">
+            <h1>Tour <span id="tours">1</span></h1>
+        </div>
+        <div class="hidden" id="winner">
+            <h1><span id="player"></span> win ! </h1>
+            <button id="restart">Restart</button>
+        </div>
+        </div>
+
+        <div class="player2">
+
+            <div class="top2">
+                <h1>Player 2</h1>
+                <div class="barp2">
+                    <div class="vie2" id="vie2"></div>
+                </div>
+                <h2>PV : <span id="pdv2">100</span> / 100</h2>
+            </div>
+
+            <div class="caracter2">
+                <img src="images/maliketh.png" alt="maliketh">    
+            </div>
+            <div class="actionp2">
+                <div class="menu2">
+                    <h3>Lance une attaque faisant entre 10 et 20 points de dégats</h3>
+                    <h3>Permet d'esquiver une attaque (50% de chance de réussir)</h3>
+                    <h3>Permet de se soigner a hauteur de 40 PV (<span id="soinp2">3</span>)</h3>
+                    <h3>Permet de doubler les dégats du joueur pour la prochaine attaque (<span id="boostp2">1</span>)</h3>
+                </div>                
+                <div class="buttonp2">
+                    <button id="atk2" >Attaque</button>
+                    <button id="def2" >Défense</button>
+                    <button id="hel2" >Potion de soin</button>
+                    <button id="fsm2" >Fiole de salut miraculeux</button>
+                </div>
+
+            </div>
+
+
+        </div>    
+    </div>
+
+    <script src="script.js"></script>    
+    <script src="player1.js"></script>
+    <script src="player2.js"></script>
+    
+</body>
+</html>
